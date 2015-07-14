@@ -1595,3 +1595,7 @@ a {
     display: none !important;
   }
 }
+.select2-offscreen
+{
+    display: none !important;
+}
