@@ -69,6 +69,12 @@ return array(
             )
         ),
     ),
+    /**
+     * The width of the model's edit form
+     *
+     * @type int
+     */
+    'form_width' => 600,
 
     /**
      * The edit fields array
@@ -94,10 +100,10 @@ return array(
 //                'Fall' => '4',
 //            ),
             'options' => array(
-                '001' => 'Winter',
-                '002' => 'Spring',
-                '003' => 'Summer',
-                '004' => 'Fall',
+                '1' => 'Winter',
+                '2' => 'Spring',
+                '3' => 'Summer',
+                '4' => 'Fall',
             ),
         ),
         'gallaryid' => array(
@@ -111,6 +117,21 @@ return array(
                 array(220, 138, 'landscape', public_path() . '/uploads/products/thumbs/medium/', 100),
                 array(383, 276, 'fit', public_path() . '/uploads/products/thumbs/full/', 100)
             )
+        ),
+        'starttime' => array(
+            'title' => '开始时间',
+            'type' => 'datetime',
+            'date_format' => 'yy-mm-dd', //optional, will default to this value
+            'time_format' => 'HH:mm',    //optional, will default to this value
+        ),
+        'attachment' => array(
+            'title' => '附件',
+            'type' => 'file',
+            'location' => public_path() . '/uploads/attachment/',
+            'naming' => 'random',
+            'length' => 20,
+            'size_limit' => 300,
+            'mimes' => 'pdf,psd,doc',
         ),
     ),
 );
