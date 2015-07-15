@@ -35,4 +35,10 @@ CKEDITOR.editorConfig = function( config ) {
 
 	// Make dialogs simpler.
 	config.removeDialogTabs = 'image:advanced;link:advanced';
+
+    //预览内文字
+    config.image_previewText='11';
+
+    //图片上传
+    config.filebrowserImageUploadUrl= "admin/UserArticleFileUpload.do";
 };
