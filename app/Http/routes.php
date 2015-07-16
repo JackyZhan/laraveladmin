@@ -20,6 +20,14 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
+//Route:: post('/admin/article/upload', 'Admin\ArticleController@upload');
+
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function()
+{
+    Route::post('/article/upload', 'ArticleController@upload');
+});
+
+
 Route::group(['prefix' => 'api', 'namespace' => 'Api'], function()
 {
     Route::get('/event', 'ApiEventController@index');

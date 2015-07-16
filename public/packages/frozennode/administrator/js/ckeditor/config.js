@@ -37,8 +37,8 @@ CKEDITOR.editorConfig = function( config ) {
 	config.removeDialogTabs = 'image:advanced;link:advanced';
 
     //预览内文字
-    config.image_previewText='11';
+    config.image_previewText='';
 
     //图片上传
-    config.filebrowserImageUploadUrl= "admin/UserArticleFileUpload.do";
+    config.filebrowserImageUploadUrl= "/admin/article/upload";
 };
