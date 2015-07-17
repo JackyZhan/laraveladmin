@@ -54,7 +54,9 @@ return array(
 	 *	)
 	 */
 	'menu' => array(
-        'event'
+        'event',
+        'eventquestion',
+        'eventchoiceitem',
     ),
 
 	/**
